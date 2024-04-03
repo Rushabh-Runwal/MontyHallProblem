@@ -1,4 +1,3 @@
-# to validate https://www.youtube.com/watch?v=4Lb-6rxZxx0
 import random
 import matplotlib.pyplot as plt
 
@@ -39,13 +38,10 @@ while C < 100:
     sample.append(win)
     C += 1
 
-# Generating x values (indices of the array)
-x = list(range(len(sample)))
 
-# Plotting
+x = list(range(len(sample)))
 plt.plot(x, sample)
-plt.xlabel('Index')
-plt.ylabel('Value')
-plt.title('Plot of array of integers')
-plt.grid(True)
+plt.xlabel('iterations')
+plt.ylabel('Win rate out of 100')
+plt.ylim(0, 100) 
 plt.show()
